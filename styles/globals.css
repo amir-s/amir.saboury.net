@@ -1,16 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
-body {
+body,
+main,
+#__next {
+  height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  @apply text-base font-light;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer base {
+  h1 {
+    @apply text-5xl	font-bold tracking-tight;
+  }
 
-* {
-  box-sizing: border-box;
+  h2 {
+    @apply text-4xl	font-bold tracking-tight;
+  }
+
+  h3 {
+    @apply text-3xl	font-bold tracking-tight;
+  }
+
+  h4 {
+    @apply text-2xl	font-bold tracking-tight;
+  }
+
+  h5 {
+    @apply text-xl font-bold tracking-tight;
+  }
+
+  h6 {
+    @apply text-lg font-bold tracking-tight;
+  }
+
+  p {
+    @apply text-gray-900 font-light text-sm;
+  }
+
+  a.link {
+    transition: color 0.5s ease;
+    text-decoration: underline;
+    color: blue;
+  }
+
+  a.link:hover {
+    color: #0070f3;
+  }
+
+  a.social {
+    transition: all 0.5s ease;
+    background-color: #212121;
+    color: white;
+    text-decoration: underline;
+  }
+
+  a.social:hover {
+    background-color: #dedede;
+    color: #212121;
+  }
+
+  a.cool {
+    transition: all 0.5s ease;
+    background-color: #fefefe;
+    text-decoration: underline;
+  }
+
+  a.cool:hover {
+    background-color: #dedede;
+    color: #212121;
+  }
 }
