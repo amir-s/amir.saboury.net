@@ -69,9 +69,9 @@ export default function Home() {
             <Leenk href="https://amirs.dev" type="social">
               write code
             </Leenk>{" "}
-            as a staff developer at{" "}
+            (previously as a staff developer at{" "}
             <a className="link" href="https://shopify.com">
-              Shopify
+              Shopify)
             </a>
             .
           </h3>
