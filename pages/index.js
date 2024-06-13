@@ -49,7 +49,9 @@ export default function Home() {
           ></img>
         </div>
         <div className="sm:w-2/3 md:w-2/3 lg:w-1/2 border-t border-gray-200 p-4 m-4 mx-auto text-center">
-          <h1 className="mb-1">Hello 👋</h1>
+          <h1 className="mb-1">
+            Hello <div className="inline-block animate-bounce">👋</div>
+          </h1>
           <h5 className="mb-4">My name is Amir Saboury!</h5>
         </div>
         <div className="p-2 m-2 mx-auto">
