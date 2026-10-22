@@ -22,9 +22,10 @@ const Leenk = ({ type, href, children }) => {
 };
 
 export default function Home() {
-  const [minutes, setMinutes] = useState(getAge());
+  const [minutes, setMinutes] = useState(null);
 
   useEffect(() => {
+    setMinutes(getAge());
     const id = setInterval(() => {
       setMinutes(getAge());
     }, 60 * 1000);
@@ -62,7 +63,9 @@ export default function Home() {
               href="https://howlongagogo.com/date/1990/april/14"
               type="cool"
             >
-              {minutes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} minutes
+              {minutes === null
+                ? "…"
+                : minutes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} minutes
             </Leenk>{" "}
             now.
           </h3>
