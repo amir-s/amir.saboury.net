@@ -1,9 +1,9 @@
 import { spawnSync } from "node:child_process";
 
 const project = "amir.saboury.net";
-const host = process.env.PET_PROJECT_DEPLOY_HOST || "pet-deploy@143.110.220.15";
+const host = process.env.PET_PROJECT_DEPLOY_HOST || "root@143.110.220.15";
 const command =
-  process.env.PET_PROJECT_DEPLOY_COMMAND || "/usr/local/bin/pet-project-deploy";
+  process.env.PET_PROJECT_DEPLOY_COMMAND || "/usr/local/sbin/pet-project-deploy-root";
 const deployBranch = process.env.PET_PROJECT_DEPLOY_BRANCH || "preview-migration";
 
 function fail(message) {
